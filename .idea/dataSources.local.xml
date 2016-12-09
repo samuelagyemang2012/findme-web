@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - findme@localhost" uuid="e6c620be-b065-492b-b232-e6fc33db6288">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>findme.*</schema-pattern>
+      <default-schemas>findme.*</default-schemas>
+    </data-source>
+  </component>
+</project>
