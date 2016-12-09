@@ -25,7 +25,7 @@ function fake_sign_up() {
     email = $("#s_email").val();
     phone = $("#s_phone").val();
 
-    url = "52.89.116.249/~samuel.agyeman/phpscripts/controller.php?cmd=1&username=" + username + "&password=" + password + "&email=" + email + "&phone=" + phone;
+    url = "http://52.89.116.249/~samuel.agyeman/phpscripts/controller.php?cmd=1&username=" + username + "&password=" + password + "&email=" + email + "&phone=" + phone;
 
     result = send_request(url);
     //change_page("#verifypage", "slide");
@@ -40,7 +40,7 @@ function true_sign_up() {
 
     code = $("#code").val();
 
-    url = "52.89.116.249/~samuel.agyeman/phpscripts/controller.php?cmd=2&code=" + code;
+    url = "http://52.89.116.249/~samuel.agyeman/phpscripts/controller.php?cmd=2&code=" + code;
 
     result = send_request(url);
 
@@ -64,7 +64,7 @@ function login() {
     email = $("#email").val();
     password = $("#password").val();
 
-    url = "52.89.116.249/~samuel.agyeman/phpscripts/controller.php?cmd=3&email=" + email + "&password=" + password;
+    url = "http://52.89.116.249/~samuel.agyeman/phpscripts/controller.php?cmd=3&email=" + email + "&password=" + password;
 
     result = send_request(url);
 
@@ -84,7 +84,7 @@ function getLocation() {
     latitude = $.cookie('latitude');
     longitude = $.cookie('longitude');
 
-    url = "52.89.116.249/~samuel.agyeman/phpscripts/controller.php?cmd=4&email=" + email + "&latitude=" + latitude + "&longitude=" + longitude;
+    url = "http://52.89.116.249/~samuel.agyeman/phpscripts/controller.php?cmd=4&email=" + email + "&latitude=" + latitude + "&longitude=" + longitude;
 
     send_request(url);
 }
@@ -95,7 +95,7 @@ function rate() {
     comment = $("#comments").val();
     email = $.cookie('email');
 
-    url = "52.89.116.249/~samuel.agyeman/phpscripts/controller.php?cmd=5&rating=" + rating + "&comments=" + comment + "&email=" + email;
+    url = "http://52.89.116.249/~samuel.agyeman/phpscripts/controller.php?cmd=5&rating=" + rating + "&comments=" + comment + "&email=" + email;
     result = send_request(url);
 
     if (result.result == 1) {
@@ -114,7 +114,7 @@ function rate() {
 function get_rating() {
     var url, result, build;
 
-    url = "52.89.116.249/~samuel.agyeman/phpscripts/controller.php?cmd=6";
+    url = "http://52.89.116.249/~samuel.agyeman/phpscripts/controller.php?cmd=6";
 
     result = send_request(url);
 
